@@ -22,4 +22,7 @@ public class HotelRegistrationMethod {
 		System.out.println(Bridgewood);
 		System.out.println(Ridgewood);
 	}
+	public int NumberOfHotellist() {
+		return 3;
+	}
 }
