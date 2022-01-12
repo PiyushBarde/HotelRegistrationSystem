@@ -1,9 +1,9 @@
 package com.bridgelabz.hotelregistration;
 
 public class HotelRegistrationDetails {
-	String hotelName;
-	Integer hotelRatesForRegularCustomerOnWeekdays;
-	Integer hotelRatesForRegularCustomerOnWeekend;
+	private String hotelName;
+	private Integer hotelRatesForRegularCustomerOnWeekdays;
+	private Integer hotelRatesForRegularCustomerOnWeekend;
 	public String getHotelName() {
 		return hotelName;
 	}
@@ -24,8 +24,8 @@ public class HotelRegistrationDetails {
 	}
 	@Override
 	public String toString() {
-		return " hotelName=" + hotelName + ", hotelRatesForRegularCustomerOnWeekdays="
-				+ hotelRatesForRegularCustomerOnWeekdays + ", hotelRatesForRegularCustomerOnWeekend="
+		return " hotelName=" + hotelName + ", \nhotel Rates For Regular Customer OnWeekdays="
+				+ hotelRatesForRegularCustomerOnWeekdays + ", \nhotel Rates For Regular Customer On Weekend="
 				+ hotelRatesForRegularCustomerOnWeekend ;
 	}
 }
