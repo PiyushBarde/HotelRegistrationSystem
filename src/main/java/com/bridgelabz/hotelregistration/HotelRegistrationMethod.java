@@ -74,7 +74,8 @@ public class HotelRegistrationMethod
 	    	System.out.println("Hotel Ridgewood has bet ratings i.e. " + Ridgewood.getHotelRating());
 	    	bestRatingHotel="Ridgewood";
 	    }
-	    if(cheapestHotel=="Lakewood" && bestRatingHotel=="Ridgewood") {
+	    if(cheapestHotel=="Lakewood" && bestRatingHotel=="Ridgewood")
+	    {
 	    	System.out.println("the cheapest best rated hotel Hotel for given Date Range is Bridgewood with total cost " + costofBridgewood + " $ and rating of" + Bridgewood.getHotelRating());
 	    }
 	    

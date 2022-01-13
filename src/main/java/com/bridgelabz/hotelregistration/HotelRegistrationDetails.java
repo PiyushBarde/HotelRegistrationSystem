@@ -35,7 +35,8 @@ public class HotelRegistrationDetails {
 		this.hotelRatesForRegularCustomerOnWeekend = hotelRatesForRegularCustomerOnWeekend;
 	}
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return " hotelName=" + hotelName + ", \nhotel Rates For Regular Customer OnWeekdays= "
 				+ hotelRatesForRegularCustomerOnWeekdays + ", \nhotel Rates For Regular Customer On Weekend="
 				+ hotelRatesForRegularCustomerOnWeekend + ", \nhotel Rating= " + hotelRating;
