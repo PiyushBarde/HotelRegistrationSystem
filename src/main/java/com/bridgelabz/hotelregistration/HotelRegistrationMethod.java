@@ -12,6 +12,8 @@ public class HotelRegistrationMethod
 	static HotelRegistrationDetails Bridgewood = new HotelRegistrationDetails();
 	static HotelRegistrationDetails Ridgewood = new HotelRegistrationDetails();
 	static Scanner sc = new Scanner(System.in);
+	static String cheapestHotel;
+	static String bestRatingHotel;
 	int totalForLakewood=0;
 	int totalForBridgewood=0;
 	int totalForRidgewood=0;
@@ -46,26 +48,36 @@ public class HotelRegistrationMethod
 	    if( costofLakewood<costofBridgewood && costofLakewood<costofRidgewood)
 	    {
 	    	System.out.println("Cheapest Hotel is Lakewood with " + costofLakewood + "$");
+	    	cheapestHotel="Lakewood";
 	    }
 	    else if( costofBridgewood<costofLakewood && costofBridgewood<costofRidgewood)
 	    {
 	    	System.out.println("Cheapest Hotel is Bridgewood with " + costofBridgewood + "$");
+	    	cheapestHotel="Bridgewood";
 	    }
 	    else
 	    {
 	    	System.out.println("Cheapest Hotel is Ridgewood with " + costofRidgewood + "$");
+	    	cheapestHotel="Ridgewood";
 	    }
 	    
 	    if(Lakewood.getHotelRating()>Bridgewood.getHotelRating() && Lakewood.getHotelRating()>Ridgewood.getHotelRating()){
 	    	System.out.println("Hotel Lakewood has bet ratings i.e. " + Lakewood.getHotelRating());
+	    	bestRatingHotel="Lakewood";
 	    }
 	    else if(Bridgewood.getHotelRating()>Lakewood.getHotelRating() && Bridgewood.getHotelRating()>Ridgewood.getHotelRating()){
 	    	System.out.println("Hotel Bridgewood has bet ratings i.e. " + Bridgewood.getHotelRating());
+	    	bestRatingHotel="Bridgewood";
 	    }
 	    else
 	    {
 	    	System.out.println("Hotel Ridgewood has bet ratings i.e. " + Ridgewood.getHotelRating());
+	    	bestRatingHotel="Ridgewood";
 	    }
+	    if(cheapestHotel=="Lakewood" && bestRatingHotel=="Ridgewood") {
+	    	System.out.println("the cheapest best rated hotel Hotel for given Date Range is Bridgewood with total cost " + costofBridgewood + " $ and rating of" + Bridgewood.getHotelRating());
+	    }
+	    
 	}
 	
 	public static int totalValue(int rateOnWeekend, int rateOnWeekdays ,String hotelName ,int daysOfWeekend, int daysOfWeek) 
