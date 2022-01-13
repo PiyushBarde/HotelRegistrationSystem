@@ -55,6 +55,17 @@ public class HotelRegistrationMethod
 	    {
 	    	System.out.println("Cheapest Hotel is Ridgewood with " + costofRidgewood + "$");
 	    }
+	    
+	    if(Lakewood.getHotelRating()>Bridgewood.getHotelRating() && Lakewood.getHotelRating()>Ridgewood.getHotelRating()){
+	    	System.out.println("Hotel Lakewood has bet ratings i.e. " + Lakewood.getHotelRating());
+	    }
+	    else if(Bridgewood.getHotelRating()>Lakewood.getHotelRating() && Bridgewood.getHotelRating()>Ridgewood.getHotelRating()){
+	    	System.out.println("Hotel Bridgewood has bet ratings i.e. " + Bridgewood.getHotelRating());
+	    }
+	    else
+	    {
+	    	System.out.println("Hotel Ridgewood has bet ratings i.e. " + Ridgewood.getHotelRating());
+	    }
 	}
 	
 	public static int totalValue(int rateOnWeekend, int rateOnWeekdays ,String hotelName ,int daysOfWeekend, int daysOfWeek) 
