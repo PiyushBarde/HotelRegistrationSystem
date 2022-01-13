@@ -57,7 +57,8 @@ public class HotelRegistrationMethod
 	    }
 	}
 	
-	public static int totalValue(int rateOnWeekend, int rateOnWeekdays ,String hotelName ,int daysOfWeekend, int daysOfWeek) {
+	public static int totalValue(int rateOnWeekend, int rateOnWeekdays ,String hotelName ,int daysOfWeekend, int daysOfWeek) 
+	{
 		int totalCost = (rateOnWeekend * daysOfWeekend) + (rateOnWeekdays * daysOfWeek);
 		System.out.println("total cost of reservation of " + hotelName + " hotel = " +  totalCost + " $");
 		return totalCost;
@@ -65,7 +66,8 @@ public class HotelRegistrationMethod
 	
 	
 	
-	public void addHotel() {
+	public void addHotel()
+	{
 		Lakewood.setHotelName("Lakewood");
 		Lakewood.setHotelRatesForRegularCustomerOnWeekdays(110);
 		Lakewood.setHotelRatesForRegularCustomerOnWeekend(90);
@@ -85,7 +87,8 @@ public class HotelRegistrationMethod
 		System.out.println("___________________________________________________________________________");
 	}
 	
-	public int NumberOfHotellist() {
+	public int NumberOfHotellist() 
+	{
 		return 3;
 	}
 }
