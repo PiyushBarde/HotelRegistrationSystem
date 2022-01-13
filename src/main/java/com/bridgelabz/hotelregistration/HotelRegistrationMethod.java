@@ -6,7 +6,8 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.time.DayOfWeek;
 
-public class HotelRegistrationMethod {
+public class HotelRegistrationMethod 
+{
 	static HotelRegistrationDetails Lakewood = new HotelRegistrationDetails();
 	static HotelRegistrationDetails Bridgewood = new HotelRegistrationDetails();
 	static HotelRegistrationDetails Ridgewood = new HotelRegistrationDetails();
@@ -15,7 +16,8 @@ public class HotelRegistrationMethod {
 	int totalForBridgewood=0;
 	int totalForRidgewood=0;
 	
-	public void cheapHotelForInputDates() {
+	public void cheapHotelForInputDates()
+	{
 		System.out.println("Enter first day of hotel Reservation (YYYY-MM-DD) : ");
 		String startDateString = sc.nextLine();
 		System.out.println("Enter last day of hotel Reservation (YYYY-MM-DD) : ");

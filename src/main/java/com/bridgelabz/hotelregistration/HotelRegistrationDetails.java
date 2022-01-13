@@ -13,10 +13,12 @@ public class HotelRegistrationDetails {
 	public Integer getHotelRatesForRegularCustomerOnWeekdays() {
 		return hotelRatesForRegularCustomerOnWeekdays;
 	}
-	public void setHotelRatesForRegularCustomerOnWeekdays(Integer hotelRatesForRegularCustomerOnWeekdays) {
+	public void setHotelRatesForRegularCustomerOnWeekdays(Integer hotelRatesForRegularCustomerOnWeekdays)
+	{
 		this.hotelRatesForRegularCustomerOnWeekdays = hotelRatesForRegularCustomerOnWeekdays;
 	}
-	public Integer getHotelRatesForRegularCustomerOnWeekend() {
+	public Integer getHotelRatesForRegularCustomerOnWeekend()
+	{
 		return hotelRatesForRegularCustomerOnWeekend;
 	}
 	public void setHotelRatesForRegularCustomerOnWeekend(Integer hotelRatesForRegularCustomerOnWeekend) {
