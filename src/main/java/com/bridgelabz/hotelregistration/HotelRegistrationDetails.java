@@ -4,6 +4,13 @@ public class HotelRegistrationDetails {
 	private String hotelName;
 	private Integer hotelRatesForRegularCustomerOnWeekdays;
 	private Integer hotelRatesForRegularCustomerOnWeekend;
+	private Integer hotelRating;
+	public Integer getHotelRating() {
+		return hotelRating;
+	}
+	public void setHotelRating(Integer hotelRating) {
+		this.hotelRating = hotelRating;
+	}
 	public String getHotelName() {
 		return hotelName;
 	}
@@ -29,8 +36,8 @@ public class HotelRegistrationDetails {
 	}
 	@Override
 	public String toString() {
-		return " hotelName=" + hotelName + ", \nhotel Rates For Regular Customer OnWeekdays="
+		return " hotelName=" + hotelName + ", \nhotel Rates For Regular Customer OnWeekdays= "
 				+ hotelRatesForRegularCustomerOnWeekdays + ", \nhotel Rates For Regular Customer On Weekend="
-				+ hotelRatesForRegularCustomerOnWeekend ;
+				+ hotelRatesForRegularCustomerOnWeekend + ", \nhotel Rating= " + hotelRating;
 	}
 }

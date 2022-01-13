@@ -66,19 +66,23 @@ public class HotelRegistrationMethod
 	
 	
 	
-	public void addHotel()
-	{
+	public void addHotel() {
 		Lakewood.setHotelName("Lakewood");
 		Lakewood.setHotelRatesForRegularCustomerOnWeekdays(110);
 		Lakewood.setHotelRatesForRegularCustomerOnWeekend(90);
+		Lakewood.setHotelRating(3);
 		
 		Bridgewood.setHotelName("Bridgewood");
 		Bridgewood.setHotelRatesForRegularCustomerOnWeekdays(160);
 		Bridgewood.setHotelRatesForRegularCustomerOnWeekend(60);
+		Bridgewood.setHotelRating(4);
+
 		
 		Ridgewood.setHotelName("Ridgewood");
 		Ridgewood.setHotelRatesForRegularCustomerOnWeekdays(220);
 		Ridgewood.setHotelRatesForRegularCustomerOnWeekend(150);
+		Bridgewood.setHotelRating(5);
+
 		System.out.println("---------------------------information about Hotels---------------------------"
 				+ "\n___________________________________________________________________________");
 		System.out.println(Lakewood);
@@ -87,8 +91,7 @@ public class HotelRegistrationMethod
 		System.out.println("___________________________________________________________________________");
 	}
 	
-	public int NumberOfHotellist() 
-	{
+	public int NumberOfHotellist() {
 		return 3;
 	}
 }
